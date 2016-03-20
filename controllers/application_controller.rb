@@ -15,7 +15,8 @@ class ApplicationController < Sinatra::Base
     short.url = params[:url]
 
     if short.unique_short?
-      'http://' + request.host_with_port + '/' + short.save
+      short.save
+      'http://' + request.host_with_port + '/' + short.short
     elsif !short.unique_short?
       short.shorten
       while !short.save

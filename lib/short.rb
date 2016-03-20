@@ -46,10 +46,10 @@ class Short
     link.short = @short
     link.timestamp = @time
 
-    if Link.exists?(short: @short)
+    if !unique_short?
       false
     elsif !unique_url?
-      (Link.find_by link: @url).short
+      @short = (Link.find_by link: @url).short
     else
       link.save
     end
