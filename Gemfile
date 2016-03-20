@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sqlite3'
+gem 'activerecord'
+gem 'rack-test'
+gem 'guard'
+gem 'rspec'
+gem 'capybara'
+gem 'factory_girl'
+gem 'guard-rspec'
+gem 'rb-fsevent'
