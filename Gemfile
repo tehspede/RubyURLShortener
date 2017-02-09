@@ -9,6 +9,6 @@ group :test, :development do
   gem 'rspec'
   gem 'capybara'
   gem 'factory_girl'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
   gem 'chromedriver-helper'
 end
